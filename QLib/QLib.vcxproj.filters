@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Options">
+      <UniqueIdentifier>{fe8d0358-d821-4fc6-aecc-5123fc776bb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Options\BlackScholes">
+      <UniqueIdentifier>{bb4f91f2-4c7e-43fc-85b8-799a9d6a0a86}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="QLib.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="BlackScholes.cpp">
+      <Filter>Options\BlackScholes</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionPricingModel.cpp">
+      <Filter>Options</Filter>
+    </ClCompile>
+    <ClCompile Include="VanillaOption.cpp">
+      <Filter>Options</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="QLib.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="BlackScholes.h">
+      <Filter>Options\BlackScholes</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionPricingModel.h">
+      <Filter>Options</Filter>
+    </ClInclude>
+    <ClInclude Include="VanillaOption.h">
+      <Filter>Options</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
